@@ -1,12 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #121212;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #222;
+  background-color: #1f1f1f;
   color: #fff;
   padding: 1.5rem 2rem;
   text-align: center;
@@ -18,6 +19,7 @@ header {
   object-fit: cover;
   border-radius: 50%;
   margin-top: 1rem;
+  border: 2px solid #444;
 }
 
 main {
@@ -27,31 +29,11 @@ main {
 }
 
 .section {
-  background-color: white;
+  background-color: #1e1e1e;
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.section h2 {
-  margin-top: 0;
-}
-
-.section p,
-.section a {
-  color: #555;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #222;
-  color: white;
-}
-
-/* Fade-in animation */
-.section {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -60,4 +42,27 @@ footer {
 .section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.section p,
+.section a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  color: #aaa;
 }
