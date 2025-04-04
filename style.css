@@ -39,10 +39,6 @@ main {
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .section h2 {
   margin-top: 0;
